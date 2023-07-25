@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "bTSmLVI6SEZ5G7hmKjrkipeuGTZcRMHIdJjyPotvAZkYtMzS7P/+R1ls+vlj+++qSwSrXEM7dMyAvXCd0mRuDA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\CircuitRotRiotProgram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\DungeonLibrary\\DungeonLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\DungeonLibrary\\DungeonLibrary.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

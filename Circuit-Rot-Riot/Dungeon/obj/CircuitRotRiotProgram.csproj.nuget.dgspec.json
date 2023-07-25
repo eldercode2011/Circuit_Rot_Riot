@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\CircuitRotRiotProgram.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\CircuitRotRiotProgram.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\CircuitRotRiotProgram.csproj",
+        "projectName": "CircuitRotRiotProgram",
+        "projectPath": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\CircuitRotRiotProgram.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\Dungeon\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\DungeonLibrary\\DungeonLibrary.csproj": {
+                "projectPath": "C:\\Users\\Student\\source\\repos\\eldercode2011\\Circuit-Rot-Riot\\DungeonLibrary\\DungeonLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Windows.Extensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
