@@ -13,13 +13,11 @@ namespace DungeonLibrary
         public int MinDamage
         {
             get { return _minDamage; }
-            set { _minDamage = value > 0 && value <= MaxDamage ? value : 2; }
+            set { _minDamage = value > 0 && value <= MaxDamage ? value : 1; }
         }
         public string Description { get; set; }
-
-        public override int CalcDamage => throw new NotImplementedException();
-
-        public Monster(string name, int hitChance, int block, int maxLife, int maxDamage, int minDamage, string description)
+        public Monster(string name, int hitChance, int block, int maxLife,
+            int maxDamage, int minDamage, string description)
             : base(name, hitChance, block, maxLife)
         {
             MaxDamage = maxDamage;
@@ -28,36 +26,34 @@ namespace DungeonLibrary
         }
         public Monster()
         {
-            
         }
         public override string ToString()
         {
-            return "\n****** MONSTER ******\n" +
+            return "\n********* MONSTER *********\n" +
                 base.ToString() +
                 $"Damage: {MinDamage} to {MaxDamage}\n" +
-                $"Description \n{Description}";
+                $"Description: \n{Description}";
         }
-
+        public override int CalcDamage()
+        {
+            return new Random().Next(MinDamage, MaxDamage + 1);
+        }
         public static Monster GetMonster()
         {
-            Monster m1 = new("Monster 1", 40, 25, 25, 8, 2, "The first monster");
-            Monster m2 = new("Monster 2", 40, 25, 25, 8, 2, "The second monster");
-            Monster m3 = new("Monster 3", 40, 25, 25, 8, 2, "The third monster");
-            Monster m4 = new("Monster 4", 40, 25, 25, 8, 2, "The fourth monster");
-            Monster m5 = new("Monster 5", 40, 25, 25, 8, 2, "The fifth monster");
-
+            Monster m1 = new Monster("Undead Goblin", 40, 25, 25, 8, 2, "A hideous mixture of rotting goblin and technology, the foot soldiers of the council.");
+            Monster m2 = new Monster("Minotorg Guard", 50, 30, 5, 25, 4, "The sad remains of minotaurs that were captured and tortured in the Deathless War, rumor has it they're still in there, somewhere.");
+            Monster m3 = new Monster("Council High Guard", 70, 5, 30, 30, 1, "A lich clad in a powerful exosuit that can survive a direct attack from a dragon's breath. Thankfully that power makes them slow and inaccurate.");
+            Monster m4 = new Monster("The Council", 42, 42, 42, 42, 0, "The eldritch abomination of flesh and technology which was birthed from the council's dark ritual that ended the Deathless War and created the technomancer empire, pray they have mercy on this day.");
             List<Monster> monsters = new()
             {
-                m1,m1,m1,m1,m1,m1,m1,
-                m2,m2,m2,m2,
-                m3,m3,m3,
-                m4,m4,
-                m5
+                m1,m1,m1,m1,m1,m1,m1,m1,
+                m2,m2,m2,m2,m2,m2,
+                m3,m3,m3,m3,
+                m4
+
             };
             int index = new Random().Next(monsters.Count);
             return monsters[index];
         }
-
-        //public override int CalcDamage();
     }
 }
